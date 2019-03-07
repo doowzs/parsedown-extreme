@@ -67,13 +67,36 @@ and `$ParsedownExtreme->mark('true'|'false')` for mark
 
 **Example**
 
-```markdown
-++Inserted text++
+### Styles
 
-==Marked text==
-```
+> *NOTE:* `~~Remove~~` use `<del>` to match CommenMark specs and parsedown default
 
-<img src='https://github.com/BenjaminHoegh/ParsedownExtreme/blob/master/docs/img/insertandmark.png' height='100px'>
+| Type                | Or           | To get            |
+| ------------------- | ------------ | ----------------- |
+| \_italics\_         | \*Italics\*  | \<i>Italics_\</i> |
+| \*\*Bold\*\*        | \_\_Bold\_\_ | \<b>Bold\</b>.    |
+| \--Strikethrough\-- |              | \<s>Strikethrough\</s> |
+| \~\~removed\~\~       |              | \<del>removed\</del> |
+| \==Mark\==          |              | \<mark>Mark\</mark> |
+| \++Insert\++        |              | \<ins>Insert\</ins> |
+
+
+
+### Typograpic Shortcuts
+
+| Type        | Or    | Get      |
+| ----------- | ----- | -------- |
+| \(c)        | \(C)  | &copy;   |
+| \(r)        | \(R)  | &reg;    |
+| \(tm)       | \(TM) | &trade;  |
+| \(degree)   |       | &deg;    |
+| \(paragraph)|       | &sect;   |
+| \...        |       | &hellip; |
+| \--         |       | &ndash;  |
+| \-\--       |       | &mdash;  |
+| \>>         |       | &raquo;  |
+| \<<         |       | &laquo;  |
+
 
 
 #### Video embeding
@@ -88,31 +111,18 @@ To toggle Video embeding you most call `$ParsedownExtreme->embeding('true'|'fals
 
 ```markdown
 <!-- Also works with normal URL -->
-[video src="https://www.youtube.com/watch?v=dWO9uP_VJV8"]
+![Video Example](myVideo.mp4)
 
-<!-- And with embed URL -->
-[video src="https://www.youtube.com/embed/dWO9uP_VJV8"]
+![Audio Example](SampleAudio.mp3)
 
-<!-- Vimeo -->
-[video src="https://player.vimeo.com/video/262117047"]
+![Image Example](myImage.jpg)
 
-<!-- Dailymotion -->
-[video src="//www.dailymotion.com/embed/video/x6nbzp4"]
 ```
 
 <img src='https://github.com/BenjaminHoegh/ParsedownExtreme/blob/master/docs/img/videoembeding.png' height='300px'>
 
 
-#### Typograpic shurtcodes
 
-To toggle Typograpic shurtcodes you most call `$ParsedownExtreme->typography('true'|'false')`
-
-**Default:** `disabled`
-
-**Example**
-
-`(c) (C) (r) (R) (tm) (TM)`
-<img src='https://github.com/BenjaminHoegh/ParsedownExtreme/blob/master/docs/img/typography.png' height='50px'>
 
 
 #### (La)KaTeX

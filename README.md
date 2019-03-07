@@ -69,16 +69,16 @@ and `$ParsedownExtreme->mark('true'|'false')` for mark
 
 ### Styles
 
-> *NOTE:* `~~Remove~~` use `<del>` to match CommenMark specs and parsedown default
+> *NOTE:* `~~Remove~~` use `<del>` to match CommenMark specs and parsedown default. The new `--` there use `<s>` is just a more correct tag to use for text there isn't about a document change
 
-| Type                | Or           | To get            |
-| ------------------- | ------------ | ----------------- |
-| \_italics\_         | \*Italics\*  | \<i>Italics_\</i> |
-| \*\*Bold\*\*        | \_\_Bold\_\_ | \<b>Bold\</b>.    |
+| Type                | Or           | To get                 |
+| ------------------- | ------------ | ---------------------- |
+| \_italics\_         | \*Italics\*  | \<i>Italics_\</i>.     |
+| \*\*Bold\*\*        | \_\_Bold\_\_ | \<b>Bold\</b>.         |
 | \--Strikethrough\-- |              | \<s>Strikethrough\</s> |
-| \~\~removed\~\~       |              | \<del>removed\</del> |
-| \==Mark\==          |              | \<mark>Mark\</mark> |
-| \++Insert\++        |              | \<ins>Insert\</ins> |
+| \~\~removed\~\~     |              | \<del>removed\</del>   |
+| \==Mark\==          |              | \<mark>Mark\</mark>.   |
+| \++Insert\++        |              | \<ins>Insert\</ins>    |
 
 
 
@@ -99,11 +99,9 @@ and `$ParsedownExtreme->mark('true'|'false')` for mark
 
 
 
-#### Video embeding
+#### Media Embeding
 
-Video embeding support Youtube, Vimeo and Dailtmotion
-
-To toggle Video embeding you most call `$ParsedownExtreme->embeding('true'|'false')`
+To toggle media embeding you most call `$ParsedownExtreme->media('true'|'false')`
 
 **Default:** `true`
 
